@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import 'typeface-roboto';
 
 import FriendsContainer from './FriendsContainer';
+import Navbar from './Navbar';
 
 class App extends React.Component {
 	constructor(props) {
@@ -12,6 +13,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div >
+				<Navbar />
 				<Grid item xs={12}>
 					<Paper>
 						<FriendsContainer></FriendsContainer>

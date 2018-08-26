@@ -1,30 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
-class FriendList extends React.Component {
-	constructor(props) {
-		super(props);
-	}
+import NavDrawer from './NavDrawer';
+
+class Navbar extends React.Component {
 	render() {
 		return (
-			<List component="nav">
-				{
-					this.props.names.map((friend, idx) =>
-						<ListItem button key={idx}>
-							<ListItemText primary={friend}/>
-						</ListItem>
-					)
-				}
-			</List>
+			<AppBar position="static">
+				<Toolbar>
+					<NavDrawer />
+					<Typography variant="title" color="inherit">
+						Chores
+					</Typography>
+					<Button color="inherit"> Notifications </Button>
+				</Toolbar>
+			</AppBar>
 		);
 	}
 }
 
-FriendList.propTypes = {
-	names: PropTypes.array,
-};
-
-export default FriendList;
+export default Navbar;
