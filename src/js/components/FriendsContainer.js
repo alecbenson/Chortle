@@ -1,14 +1,13 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import FriendList from "./FriendList";
+import React from 'react';
+import FriendList from './FriendList';
 
-class FriendsContainer extends Component {
+class FriendsContainer extends React.Component {
 	constructor(props) {
-		super(props)
+		super(props);
 		this.state = {
 			name: 'Alec Benson',
-			friends: ['Peter Salem', 'Cam Peterson']
-		}
+			friends: ['Peter Salem', 'Cam Peterson'],
+		};
 	}
 	render() {
 		return (
