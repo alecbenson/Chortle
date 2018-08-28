@@ -1,8 +1,8 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import NavDrawer from './NavDrawer';
 
@@ -12,10 +12,9 @@ class Navbar extends React.Component {
 			<AppBar position="static">
 				<Toolbar>
 					<NavDrawer />
-					<Typography variant="title" color="inherit">
-						Chores
-					</Typography>
-					<Button color="inherit"> Notifications </Button>
+					<IconButton>
+						<NotificationsIcon/>
+					</IconButton>
 				</Toolbar>
 			</AppBar>
 		);

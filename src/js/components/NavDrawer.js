@@ -36,13 +36,13 @@ class NavDrawer extends React.Component {
 					<ListItemIcon>
 						<AssignmentIcon />
 					</ListItemIcon>
-					<ListItemText primary="Chore Assignment" />
+					<ListItemText primary="My Chores" />
 				</ListItem>
 				<ListItem button>
 					<ListItemIcon>
 						<BallotIcon />
 					</ListItemIcon>
-					<ListItemText primary="Chore Selection" />
+					<ListItemText primary="Chore Management" />
 				</ListItem>
 				<ListItem button>
 					<ListItemIcon>
