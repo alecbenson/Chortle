@@ -1,0 +1,27 @@
+<style>
+  body {
+  text-align: center;
+  vertical-align: middle;
+  font-family: monaco, monospace;
+  background: url(https://media.giphy.com/media/3DnDRfZe2ubQc/giphy.gif) no-repeat center center fixed;
+  background-size: cover;
+  line-height: 20px;
+}
+h1, h2 {
+  display: inline-block;
+  background: #fff;
+}
+h1 {
+  font-size: 30px;
+  font-style: italic;
+}
+h2 {
+  font-size: 20px;
+  font-style: italic;
+}
+span {
+  background: #00000;
+}
+</style>
+<h1><span>Welcome to Chortle</span></h1><br>
+<h2><span>(Coming soon to a messy apartment near you.)</span></h2>
